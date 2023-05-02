@@ -1,0 +1,29 @@
+@import 'base', 'utilities';
+
+
+.galeria{
+    width: 100vw;
+
+    .header-galeria{
+        width: 100%;
+        background-color: $primary-color;
+        padding: 1rem;
+    
+        h1{
+            font-family: $TypoSec;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;    
+        }
+
+        p{
+            color: #ffffff;
+            text-align: center;    
+        }
+    }
+    
+    .galeria-container{
+        padding: 0 1rem;
+        
+    }
+}

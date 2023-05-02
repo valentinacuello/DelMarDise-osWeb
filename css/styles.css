@@ -1,0 +1,446 @@
+/*Reset*/
+@import url(../css/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../css/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../css/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body::-webkit-scrollbar {
+  width: .5em; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0);
+  outline: 1px solid slategrey;
+  border-radius: 1rem; }
+
+/*Typography*/
+/*Colors*/
+nav {
+  width: 100vw;
+  height: 6rem;
+  background-color: #fff;
+  font-family: "Albert Sans";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: fixed;
+  z-index: 2; }
+  @media (min-width: 1024px) {
+    nav {
+      padding: 0 16rem; } }
+  nav .logo {
+    height: 70%; }
+    nav .logo img {
+      height: 100%; }
+    @media (min-width: 1024px) {
+      nav .logo {
+        height: 70%; } }
+  nav #menu-toggle {
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    position: relative; }
+    @media (min-width: 1024px) {
+      nav #menu-toggle {
+        display: none; } }
+    nav #menu-toggle .burger-menu,
+    nav #menu-toggle .burger-menu::before, nav #menu-toggle .burger-menu::after {
+      width: 100%;
+      height: 3px;
+      display: block;
+      background-color: #08B7AF;
+      transition: transform .2s ease-in-out; }
+    nav #menu-toggle .burger-menu::before,
+    nav #menu-toggle .burger-menu::after {
+      content: '';
+      display: block;
+      position: absolute; }
+    nav #menu-toggle .burger-menu::before {
+      bottom: 0px; }
+    nav #menu-toggle .burger-menu::after {
+      top: 0px; }
+  nav .burger-open {
+    transform: rotate(45deg); }
+    nav .burger-open::after {
+      transform: rotate(90deg); }
+  nav .nav-links {
+    width: 100vw;
+    height: 35vh;
+    background-color: #fff;
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    box-shadow: 0px 7px 24px rgba(46, 46, 46, 0.1);
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.39, 0.575, 0.565, 1); }
+    @media (min-width: 1024px) {
+      nav .nav-links {
+        width: 25vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        transform: none;
+        height: inherit;
+        position: relative;
+        top: inherit;
+        box-shadow: none;
+        margin-bottom: inherit; } }
+    nav .nav-links a {
+      color: inherit;
+      text-decoration: none; }
+      @media (min-width: 1024px) {
+        nav .nav-links a::after {
+          content: '';
+          display: block;
+          width: 0%;
+          height: 2px; }
+        nav .nav-links a:hover::after {
+          width: 100%;
+          transition: width .2s ease; } }
+    nav .nav-links .actual-link {
+      font-weight: 600; }
+      nav .nav-links .actual-link::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px; }
+  nav .active {
+    transform: translateX(0%); }
+
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body::-webkit-scrollbar {
+  width: .5em; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0);
+  outline: 1px solid slategrey;
+  border-radius: 1rem; }
+
+/*Typography*/
+/*Colors*/
+.footerContainer {
+  height: 8rem;
+  background-color: #08B7AF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem; }
+  .footerContainer .rrss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    @media (min-width: 1024px) {
+      .footerContainer .rrss {
+        flex-direction: row; } }
+    .footerContainer .rrss .instagram,
+    .footerContainer .rrss .facebook {
+      width: fit-content;
+      margin: 0 1rem 0 1rem; }
+      .footerContainer .rrss .instagram i,
+      .footerContainer .rrss .instagram a,
+      .footerContainer .rrss .facebook i,
+      .footerContainer .rrss .facebook a {
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-bottom: 1rem; }
+  .footerContainer p {
+    color: #fff;
+    font-size: .8rem; }
+
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body::-webkit-scrollbar {
+  width: .5em; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(169, 169, 169, 0);
+  outline: 1px solid slategrey;
+  border-radius: 1rem; }
+
+/*Typography*/
+/*Colors*/
+main {
+  width: 100vw;
+  padding: 6rem 2rem 2rem 0; }
+  main .hero {
+    width: 100vw;
+    height: calc(100vh - 6rem);
+    background-image: url(../../img/hero-1.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    animation: backgroundChange 15s infinite ease-in-out; }
+
+@keyframes backgroundChange {
+  0% {
+    opacity: 100; }
+  50% {
+    background-image: url(../../img/hero-2.png); }
+  100% {
+    background-image: url(../../img/hero-1.png); } }
+    main .hero .txtContainer {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .hero .txtContainer .title {
+        text-align: center;
+        font-family: "Recoleta-Regular";
+        font-size: 2rem;
+        font-weight: 400;
+        color: #ffffff; }
+        @media (min-width: 1024px) {
+          main .hero .txtContainer .title {
+            font-size: 3rem; } }
+        main .hero .txtContainer .title span {
+          display: block;
+          font-family: "Albert Sans";
+          font-weight: 400;
+          font-size: 1rem;
+          margin-top: .5rem; }
+          @media (min-width: 1024px) {
+            main .hero .txtContainer .title span {
+              font-size: 1.5rem; } }
+      main .hero .txtContainer .cta {
+        background-color: #08B7AF;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Albert Sans";
+        font-weight: 600;
+        border: none;
+        border-radius: 10rem;
+        margin-top: 2rem;
+        cursor: pointer;
+        transition: transform .5s ease; }
+        main .hero .txtContainer .cta:hover {
+          background-color: #005351;
+          box-shadow: 0px 0.5rem 1rem rgba(70, 70, 70, 0.2);
+          transform: translateY(-0.5rem); }
+        main .hero .txtContainer .cta:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(0, 204, 211, 0.493); }
+    @media (min-width: 1024px) {
+      main .hero {
+        justify-content: center; } }
+  main .descripcionServicios {
+    width: 100vw;
+    padding: 3rem 1rem 0 1rem; }
+    main .descripcionServicios .bloqueUno,
+    main .descripcionServicios .bloqueDos {
+      width: 100%;
+      margin-bottom: 3rem; }
+      main .descripcionServicios .bloqueUno .fotoInvi,
+      main .descripcionServicios .bloqueDos .fotoInvi {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: .5rem;
+        box-shadow: 0px 0.5rem 1rem rgba(70, 70, 70, 0.2); }
+        @media (min-width: 1024px) {
+          main .descripcionServicios .bloqueUno .fotoInvi,
+          main .descripcionServicios .bloqueDos .fotoInvi {
+            width: 40%; } }
+      main .descripcionServicios .bloqueUno .txtContainer,
+      main .descripcionServicios .bloqueDos .txtContainer {
+        margin-top: 1rem; }
+        main .descripcionServicios .bloqueUno .txtContainer h2,
+        main .descripcionServicios .bloqueDos .txtContainer h2 {
+          margin-bottom: .5rem;
+          font-family: "Recoleta-Regular";
+          color: #08B7AF;
+          font-weight: 400; }
+          main .descripcionServicios .bloqueUno .txtContainer h2 img,
+          main .descripcionServicios .bloqueDos .txtContainer h2 img {
+            width: 1.5rem; }
+          @media (min-width: 1024px) {
+            main .descripcionServicios .bloqueUno .txtContainer h2,
+            main .descripcionServicios .bloqueDos .txtContainer h2 {
+              font-size: 2rem; } }
+        main .descripcionServicios .bloqueUno .txtContainer::after,
+        main .descripcionServicios .bloqueDos .txtContainer::after {
+          content: "";
+          display: block;
+          width: 15%;
+          height: 2px;
+          background-color: #08B7AF;
+          margin-top: 1rem; }
+        @media (min-width: 1024px) {
+          main .descripcionServicios .bloqueUno .txtContainer,
+          main .descripcionServicios .bloqueDos .txtContainer {
+            width: 50%; }
+            main .descripcionServicios .bloqueUno .txtContainer p,
+            main .descripcionServicios .bloqueDos .txtContainer p {
+              font-size: 1.3rem; } }
+      @media (min-width: 1024px) {
+        main .descripcionServicios .bloqueUno,
+        main .descripcionServicios .bloqueDos {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 3rem 16rem; } }
+    @media (min-width: 1024px) {
+      main .descripcionServicios .bloqueDos {
+        flex-direction: row-reverse; }
+      main .descripcionServicios {
+        margin: 8rem 0; } }
+  main .masDetalles {
+    width: 100vw;
+    background-color: #08B7AF;
+    padding: 4rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media (min-width: 1024px) {
+      main .masDetalles {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 8rem 18rem; } }
+    main .masDetalles .detalleUno,
+    main .masDetalles .detalleDos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 4rem; }
+      main .masDetalles .detalleUno img,
+      main .masDetalles .detalleDos img {
+        border-radius: 20rem;
+        box-shadow: 0px 1rem 2rem rgba(58, 58, 58, 0.1); }
+      main .masDetalles .detalleUno h3,
+      main .masDetalles .detalleDos h3 {
+        font-family: "Recoleta-Regular";
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #ffffff;
+        margin: .7rem 0; }
+      main .masDetalles .detalleUno p,
+      main .masDetalles .detalleDos p {
+        color: #ffffff;
+        text-align: center; }
+      @media (min-width: 1024px) {
+        main .masDetalles .detalleUno,
+        main .masDetalles .detalleDos {
+          width: 25%;
+          height: fit-content;
+          margin-bottom: unset; }
+          main .masDetalles .detalleUno h3,
+          main .masDetalles .detalleDos h3 {
+            font-size: 2rem; }
+          main .masDetalles .detalleUno p,
+          main .masDetalles .detalleDos p {
+            font-size: 1.2rem; } }
+  main .opiniones {
+    width: 100vw;
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column; }
+    main .opiniones .title {
+      padding: 0 2rem; }
+      main .opiniones .title h4 {
+        font-family: "Recoleta-Regular";
+        color: #08B7AF;
+        font-size: 1.7rem;
+        font-weight: 400;
+        text-align: center; }
+        main .opiniones .title h4 img {
+          width: 1.5rem; }
+      main .opiniones .title p {
+        text-align: center;
+        margin-top: 1rem; }
+    main .opiniones .container {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 2rem; }
+      @media (min-width: 1024px) {
+        main .opiniones .container {
+          height: 16vw;
+          justify-content: center;
+          align-items: flex-start; } }
+      main .opiniones .container .review {
+        width: 16rem;
+        height: 12rem;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5rem 2rem rgba(58, 58, 58, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 0 0 auto;
+        padding: 1rem;
+        border-radius: .5rem;
+        margin-right: 1rem; }
+        main .opiniones .container .review .header h5 {
+          font-family: "Recoleta-Regular";
+          font-size: 1rem;
+          font-weight: 400;
+          color: #08B7AF;
+          margin-bottom: .5rem; }
+        @media (min-width: 1024px) {
+          main .opiniones .container .review .header h5 {
+            font-size: 1.5rem; } }
+        main .opiniones .container .review p {
+          width: 100%;
+          text-align: left; }
+        main .opiniones .container .review a {
+          display: block;
+          margin: auto 0; }
+        @media (min-width: 1024px) {
+          main .opiniones .container .review {
+            width: 20%;
+            height: 100%;
+            padding: 2rem; } }
+    main .opiniones #leerMas {
+      color: #08B7AF;
+      padding: 1rem;
+      border-radius: .5rem;
+      text-align: center; }
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Albert Sans";
+  background-color: #F5F5F5; }

@@ -1,0 +1,346 @@
+@import 'base', 'utilities';
+
+main {
+    width: 100vw;
+    padding: 6rem 2rem 2rem 0;
+
+    .hero {
+        width: 100vw;
+        height: calc(100vh - 6rem);
+        background-image: url(../../img/hero-1.png);
+        background-size: cover;
+        background-position: center;
+        @include flexCenter(column, flex-end);
+        animation: backgroundChange 15s infinite ease-in-out;
+
+        @keyframes backgroundChange {
+            0% {
+                opacity: 100;
+            }
+
+            50% {
+                background-image: url(../../img/hero-2.png);
+            }
+
+            100% {
+                background-image: url(../../img/hero-1.png);
+
+            }
+        }
+
+        .txtContainer {
+            padding: 2rem;
+            @include flexCenter(column, center);
+
+
+            .title {
+                text-align: center;
+                font-family: $TypoSec;
+                font-size: 2rem;
+                font-weight: 400;
+                color: #ffffff;
+
+                @include desktop() {
+                    & {
+                        font-size: 3rem;
+                    }
+                }
+
+
+                span {
+                    display: block;
+                    font-family: $Typo;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    margin-top: .5rem;
+
+                    @include desktop() {
+                        & {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                }
+            }
+
+            .cta {
+                background-color: $primary-color;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-family: $Typo;
+                font-weight: 600;
+                border: none;
+                border-radius: 10rem;
+                margin-top: 2rem;
+                cursor: pointer;
+                transition: transform .5s ease;
+
+                &:hover{
+                background-color: #005351;
+                box-shadow: 0px .5rem 1rem rgba($color: #464646, $alpha: 0.2);
+                transform: translateY(-.5rem);
+                }
+
+                &:focus{
+                    outline: none;
+                    box-shadow: 0 0 0 3px rgba(0, 204, 211, 0.493);
+
+                }
+            }
+        }
+
+
+        @include desktop() {
+            & {
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .descripcionServicios {
+        width: 100vw;
+        padding: 3rem 1rem 0 1rem;
+
+        .bloqueUno,
+        .bloqueDos {
+            width: 100%;
+            margin-bottom: 3rem;
+
+            .fotoInvi {
+                width: 100%;
+                height: 30rem;
+                object-fit: cover;
+                border-radius: .5rem;
+                box-shadow: 0px .5rem 1rem rgba($color: #464646, $alpha: 0.2);
+
+                @include desktop() {
+                    & {
+                        width: 40%;
+                    }
+                }
+            }
+
+
+            .txtContainer {
+                margin-top: 1rem;
+
+                h2 {
+                    margin-bottom: .5rem;
+                    font-family: $TypoSec;
+                    color: $primary-color;
+                    font-weight: 400;
+
+                    img {
+                        width: 1.5rem;
+                    }
+
+                    @include desktop() {
+                        font-size: 2rem;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 15%;
+                    height: 2px;
+                    background-color: $primary-color;
+                    margin-top: 1rem;
+
+                }
+
+                @include desktop() {
+                    & {
+                        width: 50%;
+
+                        p {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+
+
+            @include desktop() {
+                & {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 3rem 16rem;
+                }
+            }
+
+        }
+
+
+        @include desktop() {
+
+            .bloqueDos {
+                flex-direction: row-reverse;
+            }
+
+            & {
+
+                margin: 8rem 0;
+            }
+        }
+    }
+
+    .masDetalles {
+        width: 100vw;
+        background-color: $primary-color;
+        padding: 4rem 2rem 0 2rem;
+        @include flexCenter(column, center);
+
+        @include desktop() {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            padding: 8rem 18rem;
+        }
+
+        .detalleUno,
+        .detalleDos {
+            @include flexCenter(column, center);
+            margin-bottom: 4rem;
+
+            img {
+                border-radius: 20rem;
+                box-shadow: 0px 1rem 2rem rgba($color: #3a3a3a, $alpha: 0.1);
+            }
+
+            h3 {
+                font-family: $TypoSec;
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #ffffff;
+                margin: .7rem 0;
+            }
+
+            p {
+                color: #ffffff;
+                text-align: center;
+            }
+
+            @include desktop() {
+                width: 25%;
+                height: fit-content;
+                margin-bottom: unset;
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .opiniones {
+        width: 100vw;
+        padding: 6rem 0;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            padding: 0 2rem;
+
+            h4 {
+                font-family: $TypoSec;
+                color: $primary-color;
+                font-size: 1.7rem;
+                font-weight: 400;
+                text-align: center;
+
+                img {
+                    width: 1.5rem;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 2rem;
+
+            @include desktop() {
+                height: 16vw;
+                justify-content: center;
+                align-items: flex-start;
+
+            }
+
+
+            .review {
+                width: 16rem;
+                height: 12rem;
+                background-color: #ffffff;
+                box-shadow: 0px .5rem 2rem rgba($color: #3a3a3a, $alpha: 0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex: 0 0 auto;
+                padding: 1rem;
+                border-radius: .5rem;
+                margin-right: 1rem;
+
+                .header {
+                    h5 {
+                        font-family: $TypoSec;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: $primary-color;
+                        margin-bottom: .5rem;
+                    }
+
+                    @include desktop(){
+                        h5{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    text-align: left;
+                }
+
+                a{
+                    display: block;
+                    margin: auto 0;
+                }
+
+
+
+                @include desktop() {
+                    & {
+                        width: 20%;
+                        height: 100%;
+                        padding: 2rem;
+                    }
+
+                }
+            }
+
+        }
+
+        #leerMas {
+            color: $primary-color;
+            padding: 1rem;
+            border-radius: .5rem;
+            text-align: center;
+
+        }
+    }
+}

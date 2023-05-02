@@ -1,0 +1,18 @@
+@import 'components/navbar', 'components/footer';
+@import 'views/hero';
+
+
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $Typo;
+    background-color: $bg-color;
+}

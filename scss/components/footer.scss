@@ -1,0 +1,38 @@
+@import 'base';
+@import 'utilities';
+
+.footerContainer {
+    height: 8rem;
+    background-color: $primary-color;
+    @include flexCenter(column, space-between);
+    padding: 2rem;
+
+    .rrss {
+        @include flexCenter(column, space-between);
+
+        @include desktop{
+            &{
+                flex-direction: row;
+            }
+        }
+
+        .instagram,
+        .facebook {
+            width: fit-content;
+            margin: 0 1rem 0 1rem;
+
+            i,
+            a {
+                color: #fff;
+                font-size: 1rem;
+                text-decoration: none;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    p{
+        color: #fff;
+        font-size: .8rem;
+    }
+}

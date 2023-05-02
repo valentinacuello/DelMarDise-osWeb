@@ -1,0 +1,142 @@
+@import 'base';
+@import 'utilities';
+
+
+nav{
+    width: 100vw;
+    height: 6rem;
+    background-color: #fff;
+    font-family: $Typo;
+    @include flexCenter(row, space-between);
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 2;
+
+    @include desktop(){
+        padding: 0 16rem;
+    }
+
+    .logo{
+        height: 70%;
+
+        img{
+            height: 100%;
+        }
+
+        @include desktop(){
+            height: 70%;
+        }
+    }
+
+    #menu-toggle{
+        width: 30px;
+        height: 20px;
+        background-color: transparent;
+        border: none;
+        position: relative;
+
+        @include desktop(){
+            display: none;
+        }
+
+
+        .burger-menu,
+        .burger-menu::before, .burger-menu::after{
+            width: 100%;
+            height: 3px;
+            display: block;
+            background-color: $primary-color;
+            transition: transform .2s ease-in-out;
+        }
+
+
+        .burger-menu::before,
+        .burger-menu::after{
+            content: '';
+            display: block;
+            position: absolute;
+        }
+
+        .burger-menu::before{
+            bottom: 0px;
+        }
+        .burger-menu::after{
+            top: 0px;
+        }
+
+    }
+
+    .burger-open {
+        transform: rotate(45deg);
+
+        &::after{
+            transform: rotate(90deg);
+        }
+    }
+
+
+    .nav-links{
+        width: 100vw;
+        height: 35vh;
+        background-color: #fff;
+        list-style: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        @include flexCenter(column, space-between);
+        padding: 2rem 0;
+        box-shadow: 0px 7px 24px rgba($color: #2e2e2e, $alpha: 0.1);
+        overflow: hidden;
+        transform: translateX(100%);
+        transition:  transform .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        
+        @include desktop(){
+            width: 25vw;
+            @include flexCenter(row, space-between);
+            transform: none;
+            height: inherit;
+            position: relative;
+            top: inherit;
+            box-shadow: none;
+            margin-bottom: inherit;
+        }
+
+        a{
+            color: inherit;
+            text-decoration: none;
+
+            @include desktop(){
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0%;
+                    height: 2px;
+                }
+
+                
+                &:hover::after{
+                    width: 100%;
+                    transition: width .2s ease;
+
+                }
+                
+            }          
+
+        }        
+        .actual-link{
+            font-weight: 600;
+        
+            &::after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+            }
+        }
+    }
+
+    .active{
+        transform: translateX(0%);
+    }
+}

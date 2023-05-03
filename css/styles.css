@@ -243,6 +243,7 @@ main {
         background-color: #08B7AF;
         padding: 1rem 2rem;
         text-transform: uppercase;
+        text-decoration: none;
         color: #ffffff;
         font-family: "Albert Sans";
         font-weight: 600;
@@ -477,7 +478,6 @@ body::-webkit-scrollbar-thumb {
       text-align: center; }
   .galeria .galeria-container {
     width: 100%;
-    min-height: 1024px;
     padding: 2rem 1rem; }
     .galeria .galeria-container .card-container {
       width: 100%;
@@ -485,7 +485,8 @@ body::-webkit-scrollbar-thumb {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 2rem; }
       .galeria .galeria-container .card-container .foto-invitacion {
         border-radius: .5rem;
         width: 100%; }

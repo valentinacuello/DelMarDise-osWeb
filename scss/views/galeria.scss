@@ -32,13 +32,13 @@
     
     .galeria-container{
         width: 100%;
-        min-height: 1024px;;
         padding: 2rem 1rem;
 
         .card-container{
             width: 100%;
             overflow: hidden;
             @include flexCenter(column, center);
+            margin-bottom: 2rem;
 
             .foto-invitacion{
                 border-radius: .5rem;

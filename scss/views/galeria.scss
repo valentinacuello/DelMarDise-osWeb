@@ -2,18 +2,26 @@
 
 
 .galeria{
-    width: 100vw;
+    width: 100vw;    
 
     .header-galeria{
         width: 100%;
         background-color: $primary-color;
-        padding: 1rem;
+        padding: 2rem 1rem;
     
         h1{
             font-family: $TypoSec;
+            font-size: 1.5rem;
             font-weight: 400;
             color: #ffffff;
             text-align: center;    
+            margin-bottom: .5rem;
+
+            @include desktop(){
+                &{
+                    font-size: 2rem;
+                }
+            }
         }
 
         p{
@@ -23,7 +31,53 @@
     }
     
     .galeria-container{
-        padding: 0 1rem;
+        width: 100%;
+        min-height: 1024px;;
+        padding: 2rem 1rem;
+
+        .card-container{
+            width: 100%;
+            overflow: hidden;
+            @include flexCenter(column, center);
+
+            .foto-invitacion{
+                border-radius: .5rem;
+                width: 100%;
+            }
+
+            .card-info{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+
+                #iconTitle{
+                    height: 1rem;
+                    margin-right: .2rem;
+                }
+
+                h1{
+                    font-family: $TypoSec;
+                    color: $primary-color;
+                    font-weight: 400;
+                    margin-left: .2rem;
+                }
+            }
+        }
+
+        @include desktop(){
+            &{
+                padding: 4rem 15%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card-container{
+                    width: 30%;
+                }
+            }
+        }
         
     }
 }

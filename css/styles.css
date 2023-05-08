@@ -11,6 +11,9 @@
 @import url(../css/fonts.css);
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../css/fonts.css);
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -201,10 +204,10 @@ body::-webkit-scrollbar-thumb {
 }*/
 /*Typography*/
 /*Colors*/
-main {
+.main-hero-container {
   width: 100vw;
   padding: 6rem 2rem 2rem 0; }
-  main .hero {
+  .main-hero-container .hero {
     width: 100vw;
     height: calc(100vh - 6rem);
     background-image: url(../../img/hero-1.png);
@@ -223,31 +226,31 @@ main {
     background-image: url(../../img/hero-2.png); }
   100% {
     background-image: url(../../img/hero-1.png); } }
-    main .hero .txtContainer {
+    .main-hero-container .hero .txtContainer {
       padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-      main .hero .txtContainer .title {
+      .main-hero-container .hero .txtContainer .title {
         text-align: center;
         font-family: "Recoleta-Regular";
         font-size: 2rem;
         font-weight: 400;
         color: #ffffff; }
         @media (min-width: 1024px) {
-          main .hero .txtContainer .title {
+          .main-hero-container .hero .txtContainer .title {
             font-size: 3rem; } }
-        main .hero .txtContainer .title span {
+        .main-hero-container .hero .txtContainer .title span {
           display: block;
           font-family: "Albert Sans";
           font-weight: 400;
           font-size: 1rem;
           margin-top: .5rem; }
           @media (min-width: 1024px) {
-            main .hero .txtContainer .title span {
+            .main-hero-container .hero .txtContainer .title span {
               font-size: 1.5rem; } }
-      main .hero .txtContainer .cta {
+      .main-hero-container .hero .txtContainer .cta {
         background-color: #08B7AF;
         padding: 1rem 2rem;
         text-transform: uppercase;
@@ -260,52 +263,52 @@ main {
         margin-top: 2rem;
         cursor: pointer;
         transition: transform .5s ease; }
-        main .hero .txtContainer .cta:hover {
+        .main-hero-container .hero .txtContainer .cta:hover {
           background-color: #005351;
           box-shadow: 0px 0.5rem 1rem rgba(70, 70, 70, 0.2);
           transform: translateY(-0.5rem); }
-        main .hero .txtContainer .cta:focus {
+        .main-hero-container .hero .txtContainer .cta:focus {
           outline: none;
           box-shadow: 0 0 0 3px rgba(0, 204, 211, 0.493); }
     @media (min-width: 1024px) {
-      main .hero {
+      .main-hero-container .hero {
         justify-content: center; } }
-  main .descripcionServicios {
+  .main-hero-container .descripcionServicios {
     width: 100vw;
     padding: 3rem 1rem 0 1rem; }
-    main .descripcionServicios .bloqueUno,
-    main .descripcionServicios .bloqueDos {
+    .main-hero-container .descripcionServicios .bloqueUno,
+    .main-hero-container .descripcionServicios .bloqueDos {
       width: 100%;
       margin-bottom: 3rem; }
-      main .descripcionServicios .bloqueUno .fotoInvi,
-      main .descripcionServicios .bloqueDos .fotoInvi {
+      .main-hero-container .descripcionServicios .bloqueUno .fotoInvi,
+      .main-hero-container .descripcionServicios .bloqueDos .fotoInvi {
         width: 100%;
         height: 30rem;
         object-fit: cover;
         border-radius: .3rem;
         box-shadow: 0px 0.5rem 1rem rgba(70, 70, 70, 0.2); }
         @media (min-width: 1024px) {
-          main .descripcionServicios .bloqueUno .fotoInvi,
-          main .descripcionServicios .bloqueDos .fotoInvi {
+          .main-hero-container .descripcionServicios .bloqueUno .fotoInvi,
+          .main-hero-container .descripcionServicios .bloqueDos .fotoInvi {
             width: 40%; } }
-      main .descripcionServicios .bloqueUno .txtContainer,
-      main .descripcionServicios .bloqueDos .txtContainer {
+      .main-hero-container .descripcionServicios .bloqueUno .txtContainer,
+      .main-hero-container .descripcionServicios .bloqueDos .txtContainer {
         margin-top: 1rem; }
-        main .descripcionServicios .bloqueUno .txtContainer h2,
-        main .descripcionServicios .bloqueDos .txtContainer h2 {
+        .main-hero-container .descripcionServicios .bloqueUno .txtContainer h2,
+        .main-hero-container .descripcionServicios .bloqueDos .txtContainer h2 {
           margin-bottom: .5rem;
           font-family: "Recoleta-Regular";
           color: #08B7AF;
           font-weight: 400; }
-          main .descripcionServicios .bloqueUno .txtContainer h2 img,
-          main .descripcionServicios .bloqueDos .txtContainer h2 img {
+          .main-hero-container .descripcionServicios .bloqueUno .txtContainer h2 img,
+          .main-hero-container .descripcionServicios .bloqueDos .txtContainer h2 img {
             width: 1.5rem; }
           @media (min-width: 1024px) {
-            main .descripcionServicios .bloqueUno .txtContainer h2,
-            main .descripcionServicios .bloqueDos .txtContainer h2 {
+            .main-hero-container .descripcionServicios .bloqueUno .txtContainer h2,
+            .main-hero-container .descripcionServicios .bloqueDos .txtContainer h2 {
               font-size: 2rem; } }
-        main .descripcionServicios .bloqueUno .txtContainer::after,
-        main .descripcionServicios .bloqueDos .txtContainer::after {
+        .main-hero-container .descripcionServicios .bloqueUno .txtContainer::after,
+        .main-hero-container .descripcionServicios .bloqueDos .txtContainer::after {
           content: "";
           display: block;
           width: 15%;
@@ -313,25 +316,25 @@ main {
           background-color: #08B7AF;
           margin-top: 1rem; }
         @media (min-width: 1024px) {
-          main .descripcionServicios .bloqueUno .txtContainer,
-          main .descripcionServicios .bloqueDos .txtContainer {
+          .main-hero-container .descripcionServicios .bloqueUno .txtContainer,
+          .main-hero-container .descripcionServicios .bloqueDos .txtContainer {
             width: 50%; }
-            main .descripcionServicios .bloqueUno .txtContainer p,
-            main .descripcionServicios .bloqueDos .txtContainer p {
+            .main-hero-container .descripcionServicios .bloqueUno .txtContainer p,
+            .main-hero-container .descripcionServicios .bloqueDos .txtContainer p {
               font-size: 1.3rem; } }
       @media (min-width: 1024px) {
-        main .descripcionServicios .bloqueUno,
-        main .descripcionServicios .bloqueDos {
+        .main-hero-container .descripcionServicios .bloqueUno,
+        .main-hero-container .descripcionServicios .bloqueDos {
           display: flex;
           justify-content: space-around;
           align-items: center;
           padding: 3rem 15%; } }
     @media (min-width: 1024px) {
-      main .descripcionServicios .bloqueDos {
+      .main-hero-container .descripcionServicios .bloqueDos {
         flex-direction: row-reverse; }
-      main .descripcionServicios {
+      .main-hero-container .descripcionServicios {
         margin: 8rem 0; } }
-  main .masDetalles {
+  .main-hero-container .masDetalles {
     width: 100vw;
     background-color: #08B7AF;
     padding: 4rem 2rem 0 2rem;
@@ -340,46 +343,46 @@ main {
     align-items: center;
     justify-content: space-around; }
     @media (min-width: 1024px) {
-      main .masDetalles {
+      .main-hero-container .masDetalles {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
         padding: 8rem 15%; } }
-    main .masDetalles .detalleUno,
-    main .masDetalles .detalleDos {
+    .main-hero-container .masDetalles .detalleUno,
+    .main-hero-container .masDetalles .detalleDos {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-bottom: 4rem; }
-      main .masDetalles .detalleUno img,
-      main .masDetalles .detalleDos img {
+      .main-hero-container .masDetalles .detalleUno img,
+      .main-hero-container .masDetalles .detalleDos img {
         border-radius: 20rem;
         box-shadow: 0px 1rem 2rem rgba(58, 58, 58, 0.1); }
-      main .masDetalles .detalleUno h3,
-      main .masDetalles .detalleDos h3 {
+      .main-hero-container .masDetalles .detalleUno h3,
+      .main-hero-container .masDetalles .detalleDos h3 {
         font-family: "Recoleta-Regular";
         font-size: 1.5rem;
         font-weight: 400;
         color: #ffffff;
         margin: .7rem 0; }
-      main .masDetalles .detalleUno p,
-      main .masDetalles .detalleDos p {
+      .main-hero-container .masDetalles .detalleUno p,
+      .main-hero-container .masDetalles .detalleDos p {
         color: #ffffff;
         text-align: center; }
       @media (min-width: 1024px) {
-        main .masDetalles .detalleUno,
-        main .masDetalles .detalleDos {
+        .main-hero-container .masDetalles .detalleUno,
+        .main-hero-container .masDetalles .detalleDos {
           width: 40%;
           height: fit-content;
           margin-bottom: unset; }
-          main .masDetalles .detalleUno h3,
-          main .masDetalles .detalleDos h3 {
+          .main-hero-container .masDetalles .detalleUno h3,
+          .main-hero-container .masDetalles .detalleDos h3 {
             font-size: 2rem; }
-          main .masDetalles .detalleUno p,
-          main .masDetalles .detalleDos p {
+          .main-hero-container .masDetalles .detalleUno p,
+          .main-hero-container .masDetalles .detalleDos p {
             font-size: 1.2rem; } }
-  main .opiniones {
+  .main-hero-container .opiniones {
     width: 100vw;
     height: 100vh;
     padding: 6rem 0;
@@ -387,33 +390,33 @@ main {
     justify-content: space-between;
     flex-direction: column; }
     @media (min-width: 1024px) {
-      main .opiniones {
+      .main-hero-container .opiniones {
         height: 80vh;
         justify-content: center;
         padding: 0; } }
-    main .opiniones .title {
+    .main-hero-container .opiniones .title {
       padding: 0 2rem; }
-      main .opiniones .title h4 {
+      .main-hero-container .opiniones .title h4 {
         font-family: "Recoleta-Regular";
         color: #08B7AF;
         font-size: 1.7rem;
         font-weight: 400;
         text-align: center; }
-        main .opiniones .title h4 img {
+        .main-hero-container .opiniones .title h4 img {
           width: 1.5rem; }
-      main .opiniones .title p {
+      .main-hero-container .opiniones .title p {
         text-align: center;
         margin-top: 1rem; }
-    main .opiniones .container {
+    .main-hero-container .opiniones .container {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
       overflow-x: auto;
       padding: 2rem; }
       @media (min-width: 1024px) {
-        main .opiniones .container {
+        .main-hero-container .opiniones .container {
           justify-content: center; } }
-      main .opiniones .container .review {
+      .main-hero-container .opiniones .container .review {
         width: 16rem;
         height: 100%;
         background-color: #ffffff;
@@ -425,32 +428,32 @@ main {
         padding: 1rem;
         border-radius: .5rem;
         margin-right: 1rem; }
-        main .opiniones .container .review .header h5 {
+        .main-hero-container .opiniones .container .review .header h5 {
           font-family: "Recoleta-Regular";
           font-size: 1rem;
           font-weight: 400;
           color: #08B7AF;
           margin-bottom: .5rem; }
         @media (min-width: 1024px) {
-          main .opiniones .container .review .header h5 {
+          .main-hero-container .opiniones .container .review .header h5 {
             font-size: 1.5rem; } }
-        main .opiniones .container .review p {
+        .main-hero-container .opiniones .container .review p {
           width: 100%;
           text-align: left; }
-        main .opiniones .container .review a {
+        .main-hero-container .opiniones .container .review a {
           display: block;
           margin-top: 1rem; }
         @media (min-width: 1024px) {
-          main .opiniones .container .review {
+          .main-hero-container .opiniones .container .review {
             width: 25%;
             height: 100%;
             padding: 2rem; } }
-    main .opiniones #leerMas {
+    .main-hero-container .opiniones #leerMas {
       color: #08B7AF;
       padding: 1rem;
       border-radius: .5rem;
       text-align: center; }
-      main .opiniones #leerMas:hover {
+      .main-hero-container .opiniones #leerMas:hover {
         color: #005351; }
 
 /*Reset*/
@@ -545,6 +548,49 @@ body::-webkit-scrollbar-thumb {
         justify-content: space-between; }
         .galeria .galeria-container .card-container {
           width: 30%; } }
+
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*body::-webkit-scrollbar {
+    width: .5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0);
+    outline: 1px solid slategrey;
+    border-radius: 1rem;
+
+}*/
+/*Typography*/
+/*Colors*/
+.main-container {
+  width: 100vw;
+  padding: 6rem 1rem 0 1rem; }
+  .main-container .back-btn {
+    width: 100vw;
+    height: 2rem;
+    margin-top: 2rem; }
+    .main-container .back-btn a {
+      text-decoration: none;
+      color: black; }
+  .main-container .invitacion-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-container .invitacion-container h1 {
+      font-family: "Recoleta-Regular";
+      color: #08B7AF;
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .main-container .invitacion-container .fotos-invitaciones {
+      width: 100%; }
+      .main-container .invitacion-container .fotos-invitaciones img {
+        width: 100%; }
 
 html {
   padding: 0;
